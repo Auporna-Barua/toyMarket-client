@@ -44,16 +44,25 @@ const NavBar = () => {
               >
                 <li>Home</li>
               </Link>
-              <Link className="hover:bg-slate-600 hover:text-white hover:p-2 hover:rounded-lg duration-500">
+              <Link
+                className="hover:bg-slate-600 hover:text-white hover:p-2 hover:rounded-lg duration-500"
+                to={"/allToys"}
+              >
                 <li>All Toys</li>
               </Link>
               <Link className="hover:bg-slate-600 hover:text-white hover:p-2 hover:rounded-lg duration-500">
                 <li>Add A Toy</li>
               </Link>
-              <Link className="hover:bg-slate-600 hover:text-white hover:p-2 hover:rounded-lg duration-500">
+              <Link
+                className="hover:bg-slate-600 hover:text-white hover:p-2 hover:rounded-lg duration-500"
+                to={"/myToys"}
+              >
                 <li>My Toys</li>
               </Link>
-              <Link className="hover:bg-slate-600 hover:text-white hover:p-2 hover:rounded-lg duration-500">
+              <Link
+                className="hover:bg-slate-600 hover:text-white hover:p-2 hover:rounded-lg duration-500"
+                to={"/blog"}
+              >
                 <li>Blog</li>
               </Link>
             </ul>

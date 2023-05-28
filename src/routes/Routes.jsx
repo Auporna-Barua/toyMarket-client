@@ -7,6 +7,7 @@ import Login from "../pages/Login/Login";
 import Registration from "../pages/Registration/Registration";
 import CarDetails from "../components/CategoryTab/CarDetails/CarDetails";
 import PrivateRoute from "./PrivateRouter";
+import AllToys from "../pages/AllToys/AllToys";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -42,6 +43,11 @@ const router = createBrowserRouter([
           fetch(
             `https://car-world-server-henna.vercel.app/allCars/${params.id}`
           ),
+      },
+      {
+        path: "/allToys",
+        element: <AllToys></AllToys>,
+        loader: () => fetch("https://car-world-server-henna.vercel.app/allToy"),
       },
     ],
   },
