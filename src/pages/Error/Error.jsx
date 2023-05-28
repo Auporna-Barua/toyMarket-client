@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import useTitle from "../../Hook/useTitle";
+import useTitle from "../../hook/useTitle";
 
-const ErrorPage = () => {
+const Error = () => {
   useTitle("Error");
   return (
     <>
@@ -21,4 +21,4 @@ const ErrorPage = () => {
   );
 };
 
-export default ErrorPage;
+export default Error;
