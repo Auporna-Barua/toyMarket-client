@@ -13,7 +13,7 @@ const SingleToy = ({ toy }) => {
       <td className="font-semibold">{seller}</td>
       <td className="font-semibold">
         <Link to={`/details/${_id}`}>
-          <button className="btn bg-blue-500">View Details</button>
+          <button className="btn bg-blue-500 border-none">View Details</button>
         </Link>
       </td>
     </tr>

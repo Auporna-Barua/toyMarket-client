@@ -22,7 +22,7 @@ const AllToys = () => {
 
   return (
     <>
-      <h2 className="font-bold text-3xl border-b-2 border-black w-fit p-4 mx-auto">
+      <h2 className="font-bold text-3xl border-b-2 border-blue w-fit p-4 mx-auto">
         All Car's
       </h2>
       <div className="py-10">
@@ -37,7 +37,7 @@ const AllToys = () => {
             id=""
             placeholder="Search"
           />
-          <button className="bg-slate-600 p-3 font-semibold text-xl text-white rounded">
+          <button className="bg-blue-500 p-3 font-semibold text-xl text-white rounded">
             search
           </button>
         </form>

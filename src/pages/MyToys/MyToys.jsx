@@ -18,7 +18,7 @@ const MyToys = () => {
 
   return (
     <>
-      <h2 className="font-bold text-3xl border-b-2 border-black w-fit p-4 mx-auto">
+      <h2 className="font-bold text-3xl border-b-2 border-blue-500 w-fit p-4 mx-auto">
         My Toy's
       </h2>
       <div className="py-10">

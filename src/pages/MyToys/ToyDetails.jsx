@@ -40,16 +40,16 @@ const ToyDetails = () => {
 
   return (
     <div>
-      <h1 className="font-bold text-3xl border-b-2 border-black p-3 w-fit mx-auto mb-5">
+      <h1 className="font-bold text-3xl border-b-2 border-blue-500 p-3 w-fit mx-auto mb-5">
         Update Details
       </h1>
       <form
         onSubmit={handleUpdate}
-        className="w-1/2 p-5 mx-auto border-2 border-gray-300 rounded-md bg-slate-200 my-10 shadow-lg"
+        className="w-1/2 p-5 mx-auto border-2 border-gray-300 rounded-md bg-blue-400 my-10 shadow-lg"
       >
         <div className="flex flex-col justify-evenly items-center gap-2 mt-3">
           <div className="flex flex-col mt-3 w-full">
-            <label className="font-bold text-xl" htmlFor="seller">
+            <label className="font-bold text-xl text-white" htmlFor="seller">
               Price:
             </label>
             <input
@@ -64,7 +64,7 @@ const ToyDetails = () => {
           </div>
 
           <div className="flex flex-col mt-3 w-full">
-            <label className="font-bold text-xl" htmlFor="quantity">
+            <label className="font-bold text-xl text-white" htmlFor="quantity">
               Quantity:
             </label>
             <input
@@ -78,7 +78,7 @@ const ToyDetails = () => {
             />
           </div>
           <div className="flex flex-col mt-3 w-full">
-            <label className="font-bold text-xl" htmlFor="quantity">
+            <label className="font-bold text-xl text-white" htmlFor="quantity">
               ProductId:
             </label>
             <input
@@ -95,7 +95,7 @@ const ToyDetails = () => {
         </div>
 
         <div className="mt-3">
-          <label className="font-bold text-xl" htmlFor="description">
+          <label className="font-bold text-xl text-white" htmlFor="description">
             Description:
           </label>
           <textarea
@@ -109,7 +109,7 @@ const ToyDetails = () => {
         </div>
 
         <div>
-          <button className="btn w-full mt-6">Update</button>
+          <button className="btn w-full mt-6 bg-white text-blue-500 text-xl border-2 border-blue-500 hover:bg-white hover:border-blue-500">Update</button>
         </div>
       </form>
     </div>

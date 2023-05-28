@@ -38,12 +38,12 @@ const ToyTable = ({ toy, setReload, reload }) => {
       <td className="font-semibold">{seller}</td>
       <td className="font-semibold">
         <Link to={`/ToyDetails/${_id}`}>
-          <button className="btn">Update</button>
+          <button className="btn bg-blue-500 border-2 border-blue-500 hover:border-blue-500 hover:bg-transparent hover:text-blue-500">Update</button>
         </Link>
       </td>
       <td className="font-semibold">
         <Link>
-          <button onClick={() => handleDeleteToy(_id)} className="btn">
+          <button onClick={() => handleDeleteToy(_id)} className="btn bg-red-500 border-none hover:bg-red-500">
             Delete
           </button>
         </Link>

@@ -32,7 +32,6 @@ const AddToy = () => {
       ratting,
       description,
     };
-    console.log(toyData);
 
     fetch("https://car-world-server-henna.vercel.app/addToy", {
       method: "POST",
@@ -42,7 +41,7 @@ const AddToy = () => {
       body: JSON.stringify(toyData),
     })
       .then((res) => res.json())
-      .then((data) => console.log(data));
+      .then((data) => console.log("data", data));
     Swal.fire({
       icon: "success",
       title: "Added Successful",
@@ -52,17 +51,17 @@ const AddToy = () => {
 
   return (
     <div>
-      <h1 className="font-bold text-3xl border-b-2 border-black p-3 w-fit mx-auto mb-5">
+      <h1 className="font-bold text-3xl border-b-2 border-blue-500 p-3 w-fit mx-auto mb-5">
         Add Toy
       </h1>
 
       <form
         onSubmit={handleAddToyData}
-        className="w-full p-5 mx-auto border-2 border-gray-300 rounded-md bg-slate-200 my-10 shadow-lg"
+        className="w-full p-5 mx-auto border-2 border-blue-400 rounded-md bg-blue-400 my-10 shadow-lg"
       >
         <div className="flex justify-evenly items-center gap-2">
           <div className="flex flex-col mt-3 w-full">
-            <label className="font-bold text-xl" htmlFor="seller">
+            <label className="font-bold text-xl text-white" htmlFor="seller">
               Seller Name:
             </label>
             <input
@@ -76,7 +75,7 @@ const AddToy = () => {
             />
           </div>
           <div className="flex flex-col mt-3 w-full">
-            <label className="font-bold text-xl" htmlFor="seller">
+            <label className="font-bold text-xl text-white" htmlFor="seller">
               Seller ID:
             </label>
             <input
@@ -93,7 +92,7 @@ const AddToy = () => {
 
         <div className="flex justify-evenly items-center gap-2 mt-3">
           <div className="flex flex-col w-full">
-            <label className="font-bold text-xl" htmlFor="toyName">
+            <label className="font-bold text-xl text-white" htmlFor="toyName">
               Toy Name:
             </label>
             <input
@@ -106,7 +105,7 @@ const AddToy = () => {
             />
           </div>
           <div className="flex flex-col w-full">
-            <label className="font-bold text-xl" htmlFor="category">
+            <label className="font-bold text-xl text-white" htmlFor="category">
               Sub-category:
             </label>
             <select
@@ -122,7 +121,7 @@ const AddToy = () => {
 
         <div className="flex justify-evenly items-center gap-2 mt-3">
           <div className="flex flex-col mt-2 w-full">
-            <label className="font-bold text-xl" htmlFor="price">
+            <label className="font-bold text-xl text-white" htmlFor="price">
               Price:
             </label>
             <input
@@ -136,7 +135,7 @@ const AddToy = () => {
           </div>
 
           <div className="flex flex-col mt-2 w-full">
-            <label className="font-bold text-xl" htmlFor="quantity">
+            <label className="font-bold text-xl text-white" htmlFor="quantity">
               Quantity:
             </label>
             <input
@@ -152,7 +151,7 @@ const AddToy = () => {
 
         <div className="flex justify-evenly items-center gap-2 mt-3">
           <div className="flex flex-col mt-3 w-full">
-            <label className="font-bold text-xl" htmlFor="seller">
+            <label className="font-bold text-xl text-white" htmlFor="seller">
               Toy URL:
             </label>
             <input
@@ -166,7 +165,7 @@ const AddToy = () => {
           </div>
 
           <div className="flex flex-col mt-3 w-full">
-            <label className="font-bold text-xl" htmlFor="ratting">
+            <label className="font-bold text-xl text-white" htmlFor="ratting">
               Ratting:
             </label>
             <input
@@ -181,7 +180,7 @@ const AddToy = () => {
         </div>
 
         <div className="mt-3">
-          <label className="font-bold text-xl" htmlFor="description">
+          <label className="font-bold text-xl text-white" htmlFor="description">
             Description:
           </label>
           <textarea
@@ -194,7 +193,7 @@ const AddToy = () => {
         </div>
 
         <div>
-          <button className="btn w-full mt-6">Add Toy</button>
+          <button className="btn w-full mt-6 ">Add New Toy</button>
         </div>
       </form>
     </div>
