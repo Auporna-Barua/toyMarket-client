@@ -1,4 +1,4 @@
-import  { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import useTitle from "../../hook/useTitle";
@@ -41,7 +41,11 @@ const Login = () => {
       .then((result) => {
         const newUserByGoogle = result.user;
         navigate(from, { replace: true });
-        alert("Login Successful");
+        Swal.fire({
+          icon: "success",
+          text: "LogIn successful",
+        });
+
         console.log(newUserByGoogle);
       })
       .catch((error) => {

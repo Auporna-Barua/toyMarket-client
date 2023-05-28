@@ -5,7 +5,8 @@ import Home from "../pages/Home/Home";
 import Blog from "../pages/Blog/Blog";
 import Login from "../pages/Login/Login";
 import Registration from "../pages/Registration/Registration";
-
+import CarDetails from "../components/CategoryTab/CarDetails/CarDetails";
+import PrivateRoute from "./PrivateRouter";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -28,6 +29,19 @@ const router = createBrowserRouter([
       {
         path: "/singUp",
         element: <Registration></Registration>,
+      },
+
+      {
+        path: "/carDetails/:id",
+        element: (
+          <PrivateRoute>
+            <CarDetails></CarDetails>
+          </PrivateRoute>
+        ),
+        loader: ({ params }) =>
+          fetch(
+            `https://car-world-server-henna.vercel.app/allCars/${params.id}`
+          ),
       },
     ],
   },
