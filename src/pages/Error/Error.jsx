@@ -12,9 +12,9 @@ const Error = () => {
           alt=""
         />
       </div>
-      <div className="absolute top-32 left-3/4 btn text-xl">
+      <div className="absolute top-32 left-3/4 btn text-xl bg-blue-500 hover:bg-blue-500">
         <Link to={"/"}>
-          <button className="w-60">Go to Home</button>
+          <button className="w-60 bg-blue-500">Go to Home</button>
         </Link>
       </div>
     </>
