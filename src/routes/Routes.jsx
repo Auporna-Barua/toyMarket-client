@@ -9,6 +9,7 @@ import CarDetails from "../components/CategoryTab/CarDetails/CarDetails";
 import PrivateRoute from "./PrivateRouter";
 import AllToys from "../pages/AllToys/AllToys";
 import Details from "../pages/AllToys/Details/Details";
+import AddToy from "../pages/AddToy/AddToy";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -61,6 +62,14 @@ const router = createBrowserRouter([
           fetch(
             `https://car-world-server-henna.vercel.app/allToy/${params.id}`
           ),
+      },
+      {
+        path: "/addToys",
+        element: (
+          <PrivateRoute>
+            <AddToy></AddToy>
+          </PrivateRoute>
+        ),
       },
     ],
   },
