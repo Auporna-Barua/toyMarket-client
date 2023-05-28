@@ -2,19 +2,19 @@
 const Footer = () => {
   return (
     <div>
-      <footer className="footer p-10 bg-neutral text-neutral-content grid lg:grid-cols-4">
+      <footer className="footer p-10 bg-blue-400 text-neutral-content grid lg:grid-cols-4">
         <div className="">
           <img
             className="w-20 h-20 rounded-full"
-            src="https://i.ibb.co/jHVc8xf/cars-logo.jpg"
+            src="https://res.cloudinary.com/db8l1ulfq/image/upload/v1685296109/logo_ufyczn.jpg"
             alt=""
           />
           <p className="font-bold text-lg">
-            Car World Ltd.
+            Baby Toys Ltd.
             <br />
             Providing reliable tech since 2023
           </p>
-          <p>©developed by Hr.ltd</p>
+          <p>©developed by Auporna Barua</p>
         </div>
 
         <div className="lg:mx-auto">
@@ -69,7 +69,7 @@ const Footer = () => {
         </div>
 
         <div className="lg:mx-auto">
-          <span className="footer-title">Contact-Us</span>
+          <span className="footer-title">Subscribe-Us</span>
 
           <div className=" border-l-2 px-3 py-4">
             <div className="flex flex-col">
@@ -77,27 +77,17 @@ const Footer = () => {
                 Email:
               </label>
               <input
-                className="p-2 rounded-lg mt-2"
+                className="p-2 rounded-lg mt-2 w-full"
                 type="email"
                 name=""
                 id=""
+                placeholder="Enter your email"
               />
             </div>
-            <div className="flex flex-col mt-2">
-              <label className="font-bold text-lg" htmlFor="massage">
-                Massage:
-              </label>
-              <textarea
-                className="p-2 rounded-lg mt-2"
-                name=""
-                id=""
-                cols="30"
-                rows="5"
-              ></textarea>
-            </div>
+
             <div>
               <button className="btn-sm bg-white text-gray-700 font-bold rounded-md mt-3">
-                send
+                Subscribe
               </button>
             </div>
           </div>

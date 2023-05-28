@@ -46,7 +46,10 @@ const MonsterTruck = ({ car }) => {
           </div>
           <div className="card-actions justify-end">
             <Link to={`/carDetails/${_id}`}>
-              <button onClick={handleUserExist} className="btn w-full">
+              <button
+                onClick={handleUserExist}
+                className="btn w-full bg-blue-500 border-2 border-blue-500 hover:border-blue-500 hover:bg-transparent hover:text-blue-500"
+              >
                 View details
               </button>
             </Link>

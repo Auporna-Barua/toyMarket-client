@@ -22,23 +22,23 @@ const CategoriesTab = () => {
 
   return (
     <>
-      <h1 className="text-3xl font-bold mx-auto border-b-2 border-black pb-2 w-fit mb-5">
+      <h1 className="text-3xl font-bold mx-auto border-b-2 border-blue-500 pb-2 w-fit mb-5">
         Toy's Tab
       </h1>
       <Tabs defaultIndex={0} onSelect={(index) => setCarCategory(index)}>
         <TabList>
           <Tab>
-            <span className="font-bold text-base hover:bg-slate-500 hover:text-white hover:p-1 duration-500 hover:rounded-md">
+            <span className="font-bold text-base hover:bg-blue-500 hover:text-white hover:p-1 duration-500 hover:rounded-md">
               Car's
             </span>
           </Tab>
           <Tab>
-            <span className="font-bold text-base hover:bg-slate-500 hover:text-white hover:p-1 duration-500 hover:rounded-md">
+            <span className="font-bold text-base hover:bg-blue-500 hover:text-white hover:p-1 duration-500 hover:rounded-md">
               Monster Truck
             </span>
           </Tab>
           <Tab>
-            <span className="font-bold text-base hover:bg-slate-500 hover:text-white hover:p-1 duration-500 hover:rounded-md">
+            <span className="font-bold text-base hover:bg-blue-500 hover:text-white hover:p-1 duration-500 hover:rounded-md">
               Truck
             </span>
           </Tab>

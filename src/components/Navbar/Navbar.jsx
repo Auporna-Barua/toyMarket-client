@@ -40,27 +40,27 @@ const NavBar = () => {
             >
               <Link
                 to={"/"}
-                className="hover:bg-slate-600 hover:text-white hover:p-2 hover:rounded-lg duration-500"
+                className="hover:bg-blue-500 hover:text-white p-2 hover:rounded-lg "
               >
                 <li>Home</li>
               </Link>
               <Link
-                className="hover:bg-slate-600 hover:text-white hover:p-2 hover:rounded-lg duration-500"
+                className="hover:bg-blue-500 hover:text-white p-2 hover:rounded-lg "
                 to={"/allToys"}
               >
                 <li>All Toys</li>
               </Link>
-              <Link className="hover:bg-slate-600 hover:text-white hover:p-2 hover:rounded-lg duration-500">
+              <Link className="hover:bg-blue-500 hover:text-white p-2 hover:rounded-lg ">
                 <li>Add A Toy</li>
               </Link>
               <Link
-                className="hover:bg-slate-600 hover:text-white hover:p-2 hover:rounded-lg duration-500"
+                className="hover:bg-blue-500 hover:text-white p-2 hover:rounded-lg "
                 to={"/myToys"}
               >
                 <li>My Toys</li>
               </Link>
               <Link
-                className="hover:bg-slate-600 hover:text-white hover:p-2 hover:rounded-lg duration-500"
+                className="hover:bg-blue-500 hover:text-white p-2 hover:rounded-lg "
                 to={"/blog"}
               >
                 <li>Blog</li>
@@ -69,14 +69,14 @@ const NavBar = () => {
           </div>
 
           <img
-            className="lg:w-28 w-14 lg:mt-1"
-            src="https://i.ibb.co/jHVc8xf/cars-logo.jpg"
+            className="lg:w-20 w-14 lg:mt-1"
+            src="https://res.cloudinary.com/db8l1ulfq/image/upload/v1685296109/logo_ufyczn.jpg"
             alt=""
           />
           <Link to={"/"}>
             <p className="lg:text-xl">
-              <span className="lg:text-4xl font-bold text-gray-700">Car</span>
-              <span className="lg:text-xl lg:ms-2">World</span>
+              <span className="lg:text-4xl font-bold text-gray-700">Baby</span>
+              <span className="lg:text-xl lg:ms-2">Toy</span>
             </p>
           </Link>
         </div>
@@ -84,13 +84,13 @@ const NavBar = () => {
           <ul className="menu menu-horizontal space-x-7 px-1 font-bold text-lg">
             <Link
               to={"/"}
-              className="hover:bg-slate-600 hover:text-white hover:p-2 hover:rounded-lg duration-500 hover:underline"
+              className="hover:bg-blue-500 hover:text-white p-2 hover:rounded-lg "
             >
               <li>Home</li>
             </Link>
             <Link
               to={"/allToys"}
-              className="hover:bg-slate-600 hover:text-white hover:p-2 hover:rounded-lg duration-500 hover:underline"
+              className="hover:bg-blue-500 hover:text-white p-2 hover:rounded-lg "
             >
               <li>All Toys</li>
             </Link>
@@ -99,13 +99,13 @@ const NavBar = () => {
               <>
                 <Link
                   to={"/addToys"}
-                  className="hover:bg-slate-600 hover:text-white hover:p-2 hover:rounded-lg duration-500 hover:underline"
+                  className="hover:bg-blue-500 hover:text-white p-2 hover:rounded-lg "
                 >
                   <li>Add A Toy</li>
                 </Link>
                 <Link
                   to={"/myToys"}
-                  className="hover:bg-slate-600 hover:text-white hover:p-2 hover:rounded-lg duration-500 hover:underline"
+                  className="hover:bg-blue-500 hover:text-white p-2 hover:rounded-lg "
                 >
                   <li>My Toys</li>
                 </Link>
@@ -114,7 +114,7 @@ const NavBar = () => {
 
             <Link
               to={"/blog"}
-              className="hover:bg-slate-600 hover:text-white hover:p-2 hover:rounded-lg duration-500 hover:underline"
+              className="hover:bg-blue-500 hover:text-white p-2 hover:rounded-lg  "
             >
               <li>Blog</li>
             </Link>
@@ -129,13 +129,13 @@ const NavBar = () => {
                 alt=""
                 title={user.displayName}
               />
-              <button onClick={handleLogOut} className="btn">
+              <button onClick={handleLogOut} className="btn bg-blue-500 hover:bg-transparent hover:text-blue-500 border-blue-500 hover:border-blue-500">
                 LogOut
               </button>
             </div>
           ) : (
             <Link to={"/login"}>
-              <button className="btn">LogIn</button>
+              <button className="btn bg-blue-500 hover:bg-transparent hover:text-blue-500 border-blue-500 hover:border-blue-500">LogIn</button>
             </Link>
           )}
         </div>
