@@ -1,3 +1,4 @@
+import CategoriesTab from "../../components/CategoryTab/CategoriesTab";
 import Gallery from "../../components/Gallery/Gallery";
 import Header from "../../components/Hero/Header";
 import MiniCars from "../../components/MiniCar/MiniCars";
@@ -11,9 +12,10 @@ const Home = () => {
     <Header />
       <Gallery />
       <div className="mb-10">
+      <CategoriesTab />
+      </div>
         <UpcomingCar />
         <MiniCars />
-      </div>
     </div>
   );
 };
