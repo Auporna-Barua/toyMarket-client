@@ -1,4 +1,6 @@
 import Gallery from "../../components/Gallery/Gallery";
+import MiniCars from "../../components/MiniCar/MiniCars";
+import UpcomingCar from "../../components/Upcomming/UpcommingCars";
 import useTitle from "../../hook/useTitle";
 
 const Home = () => {
@@ -6,7 +8,10 @@ const Home = () => {
   return (
     <div>
       <Gallery />
-      <div className="mb-10">hello</div>
+      <div className="mb-10">
+        <UpcomingCar />
+        <MiniCars />
+      </div>
     </div>
   );
 };
