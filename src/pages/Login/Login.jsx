@@ -110,7 +110,7 @@ const Login = () => {
         </div>
 
         <div className="text-center mt-3">
-          <p className="font-semibold text-white flex gap-2 items-center">
+          <p className="font-semibold text-white flex gap-2 items-center justify-center">
             Don't have any account?
             <Link
               to={"/singUp"}
